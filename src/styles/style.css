@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+header {
+  @apply bg-neutral-800 h-16 flex px-5 items-center;
+}
+
+header h1 {
+  @apply text-xl font-bold text-white;
+}
+
+main {
+  @apply pb-10;
+}
+
+.banner {
+  background: url("./../../assets/catBanner.jpg");
+  height: 75vh;
+  @apply bg-bottom bg-no-repeat bg-cover bg-fixed;
+}
+
+.banner-overlay {
+  @apply w-full h-full bg-gray-700 bg-opacity-30 text-white pt-36 px-6;
+  @apply md:px-10 md:space-y-3 lg:px-12;
+}
+
+.banner-overlay h1 {
+  @apply text-xl font-bold;
+  @apply md:text-3xl lg:text-5xl;
+}
+
+.search-section {
+  @apply flex items-center justify-center my-7;
+}
+
+.search-section input {
+  @apply border border-gray-200 outline-none w-4/5 px-6 py-2 rounded-md;
+  @apply focus:border-gray-700 md:w-3/5;
+}
+
+footer {
+  @apply bg-neutral-800 py-7 text-center text-white;
+}
+
+footer h4 {
+  @apply text-lg;
+}

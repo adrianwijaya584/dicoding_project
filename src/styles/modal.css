@@ -1,0 +1,37 @@
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+
+.modal {
+  @apply fixed top-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto flex justify-center items-center duration-500;
+  @apply bg-gray-500 bg-opacity-50;
+  @apply md:inset-0 h-[calc(100%-1rem)] md:h-full;
+}
+
+.modal-hidden {
+  @apply opacity-0 hidden;
+}
+
+.modal-wrapper {
+  @apply relative w-full h-full max-w-2xl md:h-auto;
+}
+
+.modal-content {
+  @apply relative bg-white rounded-lg shadow;
+}
+
+.modal-header {
+  @apply flex items-start justify-between p-4 border-b rounded-t;
+}
+
+.modal-header h3 {
+  @apply text-xl font-semibold text-gray-900;
+}
+
+.modal-header i {
+  @apply text-xl cursor-pointer;
+}
+
+.modal-body {
+  @apply p-6 space-y-2;
+}

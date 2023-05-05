@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+cat-list {
+  @apply px-7 mt-6 block;
+  @apply md:px-12 lg:px-20;
+}
+
+.cat-list-header h1 {
+  @apply text-2xl font-bold;
+}
+
+.cat-list-header hr {
+  @apply my-3 border-2 border-gray-300;
+}
+
+.cat-cards-wrapper {
+  @apply grid grid-cols-1 gap-7;
+  @apply md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+}
+
+.cat-list-message {
+  @apply text-center w-full py-3 h-96;
+}
+
+.cat-list-message p {
+  @apply text-lg font-bold;
+}
+
+cat-card {
+  @apply pb-5 flex flex-col items-center rounded-md border-gray-300 border bg-white;
+}
+
+cat-card img {
+  @apply h-56 self-center w-full object-cover object-top;
+}
+
+cat-card h4 {
+  @apply text-lg font-bold mt-3 mb-1;
+}
+
+cat-card button {
+  @apply px-6 py-2 bg-green-500 rounded-md cursor-pointer text-white duration-500 mt-2 outline-none;
+  @apply hover:bg-green-700;
+}
