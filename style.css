@@ -1,0 +1,254 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	background: url("./assets/img/library_bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body, input, button {
+	font-family: 'Poppins', sans-serif;
+}
+
+input, button {
+	font-size: 16px;
+}
+
+.headerMenus {
+	padding: 0px 50px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #c89632;
+	color: white;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+
+nav a {
+	margin-left: 10px;
+	text-decoration: none;
+	color: #fff;
+	transition: .5s;
+}
+
+nav a:hover {
+	color: #000;
+}
+
+main {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 16px;
+}
+
+.formSection {
+	display: flex;
+	flex-direction: row;
+	padding: 25px 30px;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px rgba(0 ,0 ,0 ,.5);
+	margin-top: 20px;
+	background: #fff;
+}
+
+.formSection form {
+	flex-grow: 1;
+}
+
+.formSection img {
+	width: 40%;
+	float: left;
+}
+
+.formSection h2 {
+	text-align: center;
+	color: #F7C04A;
+	margin-top: 15px;
+}
+
+.formSection .input {
+	margin: 10px 0;
+}
+
+.formSection button {
+	background: #c89632;
+	color: #fff;
+	border: transparent;
+	border-radius: 7px;
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	cursor: pointer;
+	margin-top: 20px;
+	transition: .5s;
+}
+
+.formSection button:hover {
+	background: #161616;
+}
+
+.formSection span {
+	font-weight: bold;
+}
+
+.formSection .input input {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+.formSection .input label {
+	color: #c89632;
+	font-weight: bold;
+}
+
+.searchSection {
+	margin: 16px 0;
+	padding: 10px 25px;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px rgba(0 ,0 ,0 ,.5);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: #fff;
+}
+
+.searchSection img {
+	height: 300px;
+}
+
+.searchSection h2 {
+	color: #c89632;
+	margin-bottom: 15px;
+}
+
+.searchSection form {
+	width: 50%;
+	align-self: center;
+	border: 1px solid #000;
+	padding: 25px 20px;
+	border-radius: 15px;
+}
+
+.searchSection form label {
+	color: #c89632;
+	font-weight: bold;
+}
+
+.inlineInput {
+	display: flex;
+	column-gap: 10px;
+	margin-top: 7px;
+}
+
+.inlineInput button {
+	padding: 0 40px;
+}
+
+.searchSection form input {
+	padding: 5px;
+	border-radius: 5px;
+	width: 80%;
+}
+
+.searchSection form button {
+	background: #c89632;
+	color: white;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.searchSection form button:hover {
+	background: #161616;
+}
+
+.searchSection span {
+	margin-top: 5px;
+}
+
+#bookShelfContainer {
+	display: flex;
+	column-gap: 20px;
+}
+
+.bookShelf {
+	margin: 16px 0 0 0;
+	border: 1px solid black;
+	padding: 16px;
+	border-radius: 10px;
+	width: 100%;
+	overflow-y: auto;
+	max-height: 500px;
+	box-shadow: 1px 1px 5px rgba(0 ,0 ,0 ,.5);
+	background: #fff;
+}
+
+.bookShelf h2 {
+	color: #c89632;
+	text-align: center;
+
+}
+
+.booksList {
+	padding: 20px;
+}
+
+.bookShelf .item {
+	padding: 8px 25px 16px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+.bookShelf .item h3, p {
+	margin: 8px 0;
+}
+
+.bookShelf .action button {
+	border: 0;
+	padding: 8px 17px;
+	margin-right: 10px;
+	border-radius: 7px;
+	cursor: pointer;
+	color: #fff;
+	transition: .5s;
+}
+
+.bookShelf .action .updateBtn {
+	background: #3ec70b;
+}
+
+.bookShelf .action .updateBtn:hover {
+	background: #38e54d;
+}
+
+.bookShelf .action .editBtn {
+	background: #47b5ff;
+}
+
+.bookShelf .action .editBtn:hover {
+	background: #31e1f7;
+}
+
+.bookShelf .action .deleteBtn {
+	background: #be2525;
+}
+
+.bookShelf .action .deleteBtn:hover {
+	background: #ff4646;
+}

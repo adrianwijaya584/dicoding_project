@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rak Buku Saya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="headerMenus">
+  <h2>Rak Buku</h2>
+
+  <nav>
+    <a href="#addBookForm">Tambah Buku</a>
+    <a href="#searchBookForm">Cari Buku</a>
+    <a href="#bookShelfContainer">Daftar Buku</a>
+  </nav>
+</header>
+
+<main>
+  
+  <section class="formSection" >
+    <form id="addBookForm">
+      <h2>Tambah Buku Baru</h2>
+      <div class="input">
+        <label for="addBookTitle">Judul</label>
+        <input id="addBookTitle" type="text" placeholder="Masukan Judul Disini" required autofocus>
+      </div>
+
+      <div class="input">
+        <label for="addBookAuthor">Penulis</label>
+        <input id="addBookAuthor" type="text" placeholder="Masukan Penulis Disini" required>
+      </div>
+
+      <div class="input">
+        <label for="addBookYear">Tahun Terbit</label>
+        <input id="addBookYear" type="number" placeholder="Masukan Tahun Terbit Buku Disini" required>
+      </div>
+      <button type="submit">Tambahkan Buku ke rak <span>Belum selesai dibaca</span></button>
+    </form>
+
+    <img src="./assets/img/studying.png" alt="">
+  </section>
+  
+  <section class="searchSection" id="searchBookForm">
+    <img src="./assets/img/library_1.png" alt="">
+
+    <form>
+      <h2>Cari Buku Disini !</h2>
+
+      <div class="inlineInput">
+        <input id="searchBookTitle" type="text" placeholder="Masukan judul disini">
+        <button type="reset">Reset</button>
+      </div>
+      
+      <span id="searchKeywords"></span>
+    </form>
+
+  </section>
+
+  <section id="bookShelfContainer">
+    <div class="bookShelf">
+      <h2>Belum selesai dibaca</h2>
+      
+      <div id="incompleteBookshelfList" class="booksList"></div>
+    </div>
+    
+    <div class="bookShelf">
+      <h2>Selesai dibaca</h2>
+      
+      <div id="completeBookshelfList" class="booksList">
+        <div>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</main>
+
+<script src="main.js"></script>
+
+</body>
+</html>
